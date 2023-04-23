@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-dark">
+    <nav class="fixed hidden md:block top-0 left-0 w-full z-20 bg-dark">
+      <div
+        class="container mx-auto font-semibold flex p-3 w-full justify-between items-center py-6"
+      >
+        <a href="#" class="text-white text-lg font-bold uppercase">Bertharex</a>
+
+        <ul class="flex gap-10 text-white">
+          <li class=""><a href="#">Home</a></li>
+          <li>*</li>
+          <li><a href="#projects">Projects</a></li>
+          <li>*</li>
+          <li><a href="#about">About</a></li>
+          <li>*</li>
+          <li><a href="#skill">Skill</a></li>
+        </ul>
+
+        <a href="#contact" class="btn">
+          <p class="relative z-10">Hire me</p>
+        </a>
+      </div>
+    </nav>
+    <nav class="block md:hidden menubar">
+      <button id="btn" class="text-white right-[30px] top-[30px] fixed z-30">
+        <i class="fa-solid fa-bars text-2xl"> </i>
+      </button>
+      <ul
+        id="menu"
+        class="menu text-white flex-col h-screen bg-dark fixed z-20 top-0 left-0 w-screen items-center justify-center text-2xl gap-10 text-center"
+      >
+        <li class=""><a href="#">Home</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#skill">Skill</a></li>
+      </ul>
+    </nav>
+
+    <section
+      id="home"
+      class="container mx-auto h-[100vh] flex flex-col justify-center"
+    >
+      <div
+        class="grid md:grid-cols-2 grid-cols-1 text-white relative items-center"
+      >
+        <div
+          class="flex flex-col text-center md:text-left basis-1/2 order-last md:order-first"
+        >
+          <h1 class="text-xl md:text-[45px] leading-relaxed font-bold">
+            Hi! I'm
+            <span class="bg-red-500 p-1">Tuguldur</span>
+            <br />
+            developer. Based In Mongolia
+          </h1>
+
+          <p class="my-10 text-sm md:text-[22px] font-semibold">
+            Ganzorig Tuguldur /2003.02.20/ Pisces / Love to play video games
+            such as Valorant, League of Legends, Apex Legends etc. Speaks in
+            English fluently. Also loves to play musical instruments(Piano,
+            Electric guitar, Ukulele, Drums)
+          </p>
+
+          <div class="flex basis-1/2 mx-auto md:mx-0">
+            <a href="#home" class="btn">
+              <p class="relative z-10">Portfolio</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="relative w-full h-full mt-10 md:mt-0 floating">
+          <img
+            src="../assets/images/tug.png"
+            alt=""
+            class="pro rounded-xl relative z-10 mx-auto"
+          />
+          <!-- <div
+            class="left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%] absolute w-full h-full"
+          >
+            <span
+              class="animate-ping aspect-square inline-flex h-full rounded-full bg-red-400 opacity-10"
+            ></span>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <section
+      id="projects"
+      class="container mx-auto relative py-[10vh] border-t-2 border-gray"
+    >
+      <h1
+        class="main-title w-full top-0 left-0 font-bold text-gray text-right leading-none"
+      >
+        &lt;projects&gt;
+      </h1>
+      <div class="grid grid-cols-5 grid-flow-col h-[500px] gap-4 w-full">
+        <a href="" class="bg-white col-span-3 row-span-4">
+          <img src="../assets/images/bg.jpg" alt="" class="object-cover h-full"
+        /></a>
+
+        <a href="" class="bg-white row-span-2 col-span-2 w-full h-[300px]"
+          ><img
+            src="../assets/images/bg-2.jpg"
+            alt=""
+            class="object-cover h-full"
+        /></a>
+        <a href="" class="w-full row-span-2 col-span-2 h-[300px] bg-white"
+          ><img
+            src="https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/LOL_2560x1440-98749e0d718e82d27a084941939bc9d3"
+            alt=""
+            class="object-cover h-full"
+        /></a>
+      </div>
+    </section>
+    <!-- <div class="h-[200px]"></div> -->
+
+    <section
+      id="about"
+      class="container mx-auto py-[10vh] border-t-2 border-gray"
+    >
+      <div
+        class="grid md:grid-cols-3 grid-cols-1 text-center gap-5 md:text-left"
+      >
+        <div class="col-span-1 flex flex-col gap-5 md:gap-10">
+          <h1 class="font-bold title">
+            About <br class="hidden md:block" />
+            Me
+          </h1>
+
+          <div class="flex justify-center md:justify-start">
+            <a href="#" class="btn">
+              <p>Download CV</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-span-2">
+          <p class="text-white text-md md:text-lg">
+            Ganzorig Tuguldur /2003.02.20/ Pisces / Love to play video games
+            such as Valorant, League of Legends, Apex Legends etc. Speaks in
+            English fluently. Also loves to play musical instruments(Piano,
+            Electric guitar, Ukulele, Drums)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill" class="border-t-2 border-gray relative">
+      <div
+        class="h-[200px] absolute top-[50px] translate-x-10 -left-[10%] w-1/2 bg-[#131313]"
+      ></div>
+      <div class="container mx-auto py-[10vh]">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-7 relative z-10 font-bold text-md md:text-xl"
+        >
+          <div class="skill-btn group">
+            <!-- <div
+              class="group bg-white  hover:border-white duration-300 hover:bg-red-500 hover:text-white cursor-pointer border-l-4 rounded-sm border-red-500 bg-white py-10 text-dark flex justify-center items-center flex-col text-center gap-3"
+            > -->
+            <img src="../assets/skills/python.png" class="skill-image" alt="" />
+            <h1 class="">Python</h1>
+          </div>
+          <div class="skill-btn group">
+            <img src="../assets/skills/java.png" class="skill-image" alt="" />
+            <h1 class="">Java</h1>
+          </div>
+          <div class="skill-btn group">
+            <img src="../assets/skills/html.png" class="skill-image" alt="" />
+            <h1 class="">Html</h1>
+          </div>
+          <div class="skill-btn group">
+            <img src="../assets/skills/css.png" class="skill-image" alt="" />
+            <h1 class="">Css</h1>
+          </div>
+          <div class="skill-btn group">
+            <img src="../assets/skills/as.png" class="skill-image" alt="" />
+            <h1 class="">Android Studio</h1>
+          </div>
+          <div class="skill-btn group">
+            <img src="../assets/skills/mysql.png" class="skill-image" alt="" />
+            <h1 class="">MySql</h1>
+          </div>
+          <div class="skill-btn group">
+            <img src="../assets/skills/java.png" class="skill-image" alt="" />
+            <h1 class="">C#</h1>
+          </div>
+        </div>
+        <h1
+          class="-translate-y-[20%] main-title w-full top-0 left-0 font-bold text-gray text-right leading-none"
+        >
+          &lt;specialized&gt;
+        </h1>
+      </div>
+
+      <!-- Python, java, mySql, C#, HTML, CSS, Android studio -->
+    </section>
+    <section id="contact" class="pt-[10vh] relative">
+      <div class="h-full absolute top-0 right-0 w-1/2 bg-[#131313]"></div>
+      <div class="container mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-3 relative z-10">
+          <div class="md:col-span-1 col-span-full flex flex-col gap-10">
+            <h1 class="font-bold title text-center md:text-left">
+              Hire Me <br class="hidden md:block" />
+              For The Next Projects
+            </h1>
+
+            <div class="flex gap-4 justify-center md:justify-start mb-5">
+              <div class="contact-icon">
+                <a href="https://www.facebook.com/tuguldur.ganzorig.311">
+                  <i class="fa-brands fa-facebook"></i
+                ></a>
+              </div>
+              <div class="contact-icon">
+                <a href="https://steamcommunity.com/profiles/76561198294348183">
+                  <i class="fa-brands fa-steam"></i>
+                </a>
+              </div>
+              <div class="contact-icon">
+                <a
+                  href="https://open.spotify.com/user/315izsajyzybkosx423xnadhix2u"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </div>
+              <div class="contact-icon">
+                <i class="fa-brands fa-discord"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-2 py-10 px-10 rounded-md shadow-xl border-l-4 border-red-500 bg-white flex flex-col justify-center"
+          >
+            <h1
+              class="text-xl md:text-[40px] text-dark text-center font-bold mb-5"
+            >
+              Contact Us
+            </h1>
+
+            <form
+              action=""
+              class="text-md md:text-lg font-semibold flex flex-col gap-10"
+            >
+              <div class="flex flex-col">
+                <label for="input" class="text-light">Full Name</label>
+                <input class="contact-input" type="text" />
+              </div>
+              <div class="flex flex-col">
+                <label for="input" class="text-light">Email</label>
+                <input class="contact-input" type="text" />
+              </div>
+              <div class="flex flex-col">
+                <label for="input" class="text-light">Phone</label>
+                <input class="contact-input" type="text" />
+              </div>
+              <div class="flex flex-col">
+                <label for="input" class="text-light">Comment</label>
+                <input class="contact-input" type="text" />
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="px-6 py-3 text-white duration-300 bg-red-500 hover:bg-white hover:text-red-500 border-2 borde-red-500"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-white py-[5vh] mt-5 md:-mt-[50px]">
+      <div class="container">
+        <p class="font-semibold">Made by Tuguldur. All right reserved.</p>
+      </div>
+    </footer>
+    <script>
+      //   let menutoggle = document.querySelector("#btn");
+      //   let menu = document.querySelector(".menu");
+      //   menutoggle.onclick = function () {
+      //     menu.classList.toggle("active");
+      //     console.log(menu);
+      //   };
+      let menutoggle = document.querySelector(".menubar");
+      menutoggle.onclick = function () {
+        menutoggle.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

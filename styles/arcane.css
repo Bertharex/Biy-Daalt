@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg {
+  background: url(../assets/images/bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #030608;
+  color: white;
+}
+.hero-image {
+  @apply overflow-hidden rounded-lg hover:scale-125 duration-100;
+}
+
+.top-shadow {
+  box-shadow: 0px 20px 20px #030608, 0px -10px 20px #030608;
+}
